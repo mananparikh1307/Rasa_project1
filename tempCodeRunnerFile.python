@@ -1,0 +1,15 @@
+def linearsearch(list, target) :
+    for i in range(0,len(list)):
+        if list[i] == target :
+            return i
+        return None
+    
+def verify(index):
+    if index is not None:
+        print("Target is found at", index)
+    else:
+        print("Target not found")
+
+testarray = [2,4,6,8,10,12,14,16]
+res = linearsearch(testarray,6)
+verify(res)

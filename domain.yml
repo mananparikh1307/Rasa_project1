@@ -1,0 +1,84 @@
+version: "2.0"
+intents:
+  - greet
+  - goodbye
+  - dress_code
+  - software
+  - leaves
+  - total_spend_over_year
+  - total_spend_over_3_years
+  - variance_of_month
+  - top_5_year_2020
+  - bottom_5_year_2020
+  - top_5_year_2019
+  - bottom_5_year_2019
+  - top_5_year_2018
+  - bottom_5_year_2018
+
+entities:
+  - year_total
+  - total
+  - variance
+  - year
+  - top52020
+  - top52019
+  - top52018
+  - bottom52020
+  - bottom52019
+  - bottom52018
+
+slots:
+  yeartotal:
+    type: text
+  total:
+    type: text
+  variance:
+    type: text
+  year:
+    type: text
+  top52020:
+    type: text
+  top52019:
+    type: text
+  top52018:
+    type: text
+  bottom52020:
+    type: text
+  bottom52019:
+    type: text
+  bottom52018:
+    type: text
+
+
+
+actions:
+  - action_total_spend_year
+  - action_total_spend_table
+  - action_variance_month
+  - action_top5_2020
+  - action_top5_2019
+  - action_top5_2018
+  - action_bottom5_2020
+  - action_bottom5_2019
+  - action_bottom5_2018
+
+
+responses:
+  utter_greet:
+  - text: "The dress code is formals"
+
+  utter_goodbye:
+  - text: "Bye"
+  
+  utter_reply1:
+  - text: "we use terra"
+
+  utter_reply2:
+  - text: "The dress code is formals"
+ 
+ utter_reply3:
+ - text: "Ask the HR , contact them on 1234567"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

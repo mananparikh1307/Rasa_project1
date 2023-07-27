@@ -1,0 +1,102 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: total_spend_over_year
+  examples: |
+    - yeartotal
+    - Can you please give me the spend data yearwise 
+    - yearwise spend data
+    - individual year spend data
+
+- intent: total_spend_over_3_years
+  examples: |
+    - total spend data
+    - combined spend data
+    - total
+
+- intent: variance_of_month
+  examples: |
+    - variance
+    - compare 2 months
+    - difference in months
+    - variance month
+  
+- intent: top_5_year_2020
+  examples: |
+    - top 5 year 2020
+    - top 5 2020
+    - t 5 2020
+    - t 20
+    - top52020
+
+- intent: bottom_5_year_2020
+  examples: |
+    - bottom 5 year 2020
+    - bot 5 2020
+    - b 5 2020
+    - b 5 20
+    - bottom52020
+
+- intent: top_5_year_2019
+  examples: |
+    - top 5 year 2019
+    - top 5 2019
+    - t 5 2019
+    - t 19
+    - top52019
+
+- intent: bottom_5_year_2019
+  examples: |
+    - bottom 5 year 2019
+    - bot 5 2019
+    - b 5 2019
+    - b 5 19
+    - bottom52019
+
+- intent: top_5_year_2018
+  examples: |
+    - top 5 year 2018
+    - top 5 2018
+    - t 5 2018
+    - t 18
+    - top52018
+
+
+- intent: bottom_5_year_2018
+  examples: |
+    - bottom 5 year 2018
+    - bot 5 2018
+    - b 5 2018
+    - b 5 18
+    - bottom52018
+
